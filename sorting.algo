@@ -1,0 +1,30 @@
+Algorithm isertionSort
+var x:integer; 
+var tab:Array_of_integer:=[8,2,4,1,3];
+
+BEGIN 
+x:=write(x);
+x:=read(x);
+tab.push(x);
+sorting(tab);
+       
+       
+Procedure sorting(tab)
+BEGIN
+     var n:=tab.length;
+     for(var i FROM 0 TO n-2 STEP 1 DO
+         for (var j FROM 0 TO n-i-2 STEP 1) DO 
+             if(tab[j]>tab[j+1])DO 
+                 var x=tab[j];
+                 tab[j]=tab[j+1];
+                 tab[j+1]=x;
+                END
+            END
+    END
+Write tab;
+                 
+END
+   
+   
+
+END
